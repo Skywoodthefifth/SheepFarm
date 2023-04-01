@@ -12,6 +12,11 @@ public class Card : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (Time.timeScale == 0f)
+        {
+            return;  // ignore click
+        }
+
         Debug.Log("clicked");
 
         if (transform.parent.gameObject.CompareTag("Mask"))

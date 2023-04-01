@@ -5,7 +5,7 @@ using UnityEngine;
 public class Barn : MonoBehaviour
 {
     private List<Card> cards = new List<Card>();
-    [SerializeField] private List<GameObject> masks;
+    public List<GameObject> masks;
 
     public void AddCard(Card card)
     {
@@ -116,5 +116,7 @@ public class Barn : MonoBehaviour
                 }
         }
     }
+
+   
 
 }
